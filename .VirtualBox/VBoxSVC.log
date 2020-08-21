@@ -1,0 +1,139 @@
+00:00:00.003276 main     VirtualBox COM Server 6.1.8 r137981 win.amd64 (May 14 2020 20:30:31) release log
+00:00:00.003278 main     Log opened 2020-08-08T01:14:25.858503200Z
+00:00:00.003278 main     Build Type: release
+00:00:00.003282 main     OS Product: Windows 10
+00:00:00.003282 main     OS Release: 10.0.18363
+00:00:00.003283 main     OS Service Pack: 
+00:00:00.014318 main     DMI Product Name: G5 5090
+00:00:00.021129 main     DMI Product Version: 
+00:00:00.021137 main     Firmware type: UEFI
+00:00:00.021284 main     Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.022553 main     Host RAM: 16237MB (15.8GB) total, 13540MB (13.2GB) available
+00:00:00.022557 main     Executable: C:\Program Files\Oracle\VirtualBox\VBoxSVC.exe
+00:00:00.022558 main     Process ID: 13620
+00:00:00.022558 main     Package type: WINDOWS_64BITS_GENERIC
+00:00:00.065205          VirtualBox: object creation starts
+00:00:00.066440          Home directory: 'C:\Users\noush\.VirtualBox'
+00:00:00.066808          Installed Drivers:
+00:00:00.068520            C:\Windows\system32\DRIVERS\VBoxNetAdp6.sys (Version: 6.1.8.37981)
+00:00:00.070333            C:\Windows\system32\DRIVERS\VBoxNetLwf.sys (Version: 6.1.8.37981)
+00:00:00.070671            C:\Windows\system32\DRIVERS\VBoxUSBMon.sys (Version: 6.1.8.37981)
+00:00:00.070897            C:\Windows\system32\DRIVERS\VBoxDrv.sys (Version: 6.1.8.37981)
+00:00:00.075463          Loading settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:00.081197          usbLibGetDevices: Starting USB device enumeration
+00:00:00.087162          Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:00:00.089401          usbLibGetDevices: Found 5 USB devices, 0 captured
+00:00:00.092589          USB: Unknown USB device detected (idVendor: 0x0cf3, idProduct: 0xe009)
+00:00:00.127998          HostDnsMonitor: initializing
+00:00:00.132740          HostDnsMonitor: updating information
+00:00:00.133388          HostDnsMonitor: old information
+00:00:00.133389            no server entries
+00:00:00.133390            no domain set
+00:00:00.133390            no search string entries
+00:00:00.133391          HostDnsMonitor: new information
+00:00:00.133391            server 1: 192.168.0.1
+00:00:00.133392            domain: hitronhub.home
+00:00:00.133392            no search string entries
+00:00:00.186006          VD: VDInit finished with VINF_SUCCESS
+00:00:00.188666          VirtualBox: object created
+00:00:03.638207 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:00:03.643882 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:00:03.645447 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:00:15.579026          Loading settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:00:15.581735          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={Could not find a registered machine with UUID {4fb6123c-5a8c-436f-91c9-922c85b9e686}}, preserve=false aResultDetail=0
+00:00:15.586652          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:19.596929          Launched VM: 69101856 pid: 16360 (0x3fe8) frontend: GUI/Qt name: Fedora-Linux
+00:00:22.717654          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:00:23.091764          ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:00:23.287547          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:23.289689          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:23.291734          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:23.293671          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:23.295465          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:01:02.566638 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:01:02.572404 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:01:02.574149 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:01:15.913736 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:01:15.919825 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:01:15.921391 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:01:26.605665 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:01:26.611662 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:01:26.613165 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:01:29.833937 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:01:29.839684 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:01:29.841249 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:01:41.343618 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:01:41.349561 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:01:41.351142 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:01:54.207490 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:01:54.212345 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:01:54.213945 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:04:09.434172 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:04:09.439914 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:04:09.443126 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:04:38.446296          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:46.364002          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:49.404078          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:49.965029          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.058733          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.090201          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.110357          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.141058          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.160017          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.176310          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.194950          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.213913          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.233765          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.257833          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.276604          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.298502          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.317016          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.343046          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:53.365617          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:55.701875          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:56.544110          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:04:57.772697          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:00.973368          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:04.881083          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:04.897669          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:04.917266          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:05.051533          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.479184          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.501156          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.527327          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.553190          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.620426          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.639100          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.664492          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.689234          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.851310          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.936862          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.956890          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:07.978610          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:08.130720          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:10.795196          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:10.874768          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:10.899183          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:10.920714          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:05:11.675286          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:06:19.724795 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:06:19.730241 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:06:19.732405 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:11:41.183593 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:11:41.189384 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:11:41.191233 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:13:56.449528 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:13:56.456554 USBPROXY Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#4&83d2a16&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 14
+00:13:56.459035 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:21:24.312222          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:21:24.321722          Saving settings file "C:\Users\noush\VirtualBox VMs\Fedora-Linux\Fedora-Linux.vbox" with version "1.16-windows"
+00:21:47.712237          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:21:47.718862          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:21:47.721221          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:21:47.723332          Saving settings file "C:\Users\noush\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:21:53.305671 main     VirtualBox: object deletion starts
+00:21:53.305708 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium 'C:\VMs\Fedora-Linux.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:21:53.306227 main     HostDnsMonitor: shutting down ...
+00:21:53.306269 main     HostDnsMonitor: shut down
+00:21:53.307876 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:21:53.307971 main     VirtualBox: object deleted

@@ -1,0 +1,64 @@
+00:00:00.400672 VirtualBox GUI VM Selector Window 6.1.8 r137981 win.amd64 (May 14 2020 20:30:31) release log
+00:00:00.400673 Log opened 2020-08-08T01:14:26.077174200Z
+00:00:00.400674 Build Type: release
+00:00:00.400676 OS Product: Windows 10
+00:00:00.400677 OS Release: 10.0.18363
+00:00:00.400677 OS Service Pack: 
+00:00:00.408499 DMI Product Name: G5 5090
+00:00:00.410995 DMI Product Version: 
+00:00:00.411002 Firmware type: UEFI
+00:00:00.411136 Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.411146 Host RAM: 16237MB (15.8GB) total, 13529MB (13.2GB) available
+00:00:00.411149 Executable: C:\Program Files\Oracle\VirtualBox\VirtualBox.exe
+00:00:00.411149 Process ID: 8780
+00:00:00.411149 Package type: WINDOWS_64BITS_GENERIC
+00:00:00.411537 Qt version: 5.6.2
+00:00:00.458933 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.134942 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:15.779255 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:38.629982 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:46.544649 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:49.585337 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:50.146687 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.239782 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.271071 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.293863 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.322363 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.342359 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.359632 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.376101 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.395979 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.414502 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.439764 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.457588 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.479589 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.498747 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.528566 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:53.546887 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:55.881990 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:56.726106 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:57.953093 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:01.153543 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:05.063425 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:05.078075 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:05.097361 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:05.233171 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:07.661694 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:07.681928 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:07.708290 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:07.734171 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:07.803937 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:07.821893 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:07.846973 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:07.870578 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:08.032748 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:08.119687 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:08.139536 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:08.159334 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:08.311110 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:10.976789 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:11.058075 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:11.080135 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:11.102279 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:05:11.856356 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:21:24.504828 GUI: UIMediumEnumerator: Medium-enumeration finished!
