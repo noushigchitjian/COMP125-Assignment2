@@ -1,0 +1,202 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+<main class="container">
+    <div class="jumbotron">
+        <h1 class="display-4"><%= title %></h1>      
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <form method="POST" class="was-validated">
+                <input type="text"id="username" name="username" value="DirkLapitan" hidden>
+                <input type="text"id="surveyID" name="surveyID" value= 1234  hidden>
+                <div class="form-group">
+                    <input type="text" class="form-control is-valid" id="surveyTitle" name="surveyTitle" placeholder="Survey Title" value="<%= surveys.surveyTitle %>" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control is-valid" name="description" id="exampleFormControlTextarea1" rows="3" placeholder="Description" required><%= surveys.description %></textarea>
+                </div>
+
+                <!--Question 01-->
+                <div class="bg-light p-3 mb-3">
+                    <div class="row .justify-content-center">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="question1" name="questions" placeholder="Question 1" value="<%= surveys.questions[0] %>" required>
+                            </div>
+                        </div>
+                        <% if(surveys.questionType == "mcq"){ %>
+                        
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q1choice1" name="q1" placeholder="Option 1" value="<%= surveys.answers[0][0] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q1choice2" name="q1" placeholder="Option 2" value="<%= surveys.answers[0][1] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q1choice3" name="q1" placeholder="Option 3" value="<%= surveys.answers[0][2] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q1choice4" name="q1" placeholder="Option 4" value="<%= surveys.answers[0][3] %>" required>
+                            </div>
+                        </div>
+                        <% } %> 
+                    </div>
+                </div>
+                <!--Question 02-->
+                <div class="bg-light p-3 mb-3">
+                    <div class="row .justify-content-center">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="question2" name="questions" placeholder="Question 2" value="<%= surveys.questions[1] %>" required>
+                            </div>
+                        </div>
+                        <% if(surveys.questionType == "mcq"){ %>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q2choice1" name="q2" placeholder="Option 1" value="<%= surveys.answers[1][0] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q2choice2" name="q2" placeholder="Option 2" value="<%= surveys.answers[1][1] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q2choice3" name="q2" placeholder="Option 3" value="<%= surveys.answers[1][2] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q2choice4" name="q2" placeholder="Option 4" value="<%= surveys.answers[1][3] %>" required>
+                            </div>
+                        </div>
+                        <% } %> 
+                    </div>
+                </div>
+
+                <!--Question 03-->
+                <div class="bg-light p-3 mb-3">
+                    <div class="row .justify-content-center">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="question3" name="questions" placeholder="Question 3" value="<%= surveys.questions[2] %>" required>
+                            </div>
+                        </div>
+                        <% if(surveys.questionType == "mcq"){ %>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q3choice1" name="q3" placeholder="Option 1" value="<%= surveys.answers[2][0] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q3choice2" name="q3" placeholder="Option 2" value="<%= surveys.answers[2][1] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q3choice3" name="q3" placeholder="Option 3" value="<%= surveys.answers[2][2] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q3choice4" name="q3" placeholder="Option 4" value="<%= surveys.answers[2][3] %>" required>
+                            </div>
+                        </div>
+                        <% } %> 
+                    </div>
+                </div>
+
+                <!--Question 04-->
+                <div class="bg-light p-3 mb-3">
+                    <div class="row .justify-content-center">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="question4" name="questions" placeholder="Question 4" value="<%= surveys.questions[3] %>" required>
+                            </div>
+                        </div>
+                        <% if(surveys.questionType == "mcq"){ %>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q4choice1" name="q4" placeholder="Option 1" value="<%= surveys.answers[3][0] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q4choice2" name="q4" placeholder="Option 2" value="<%= surveys.answers[3][1] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q4choice3" name="q4" placeholder="Option 3" value="<%= surveys.answers[3][2] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q4choice4" name="q4" placeholder="Option 4" value="<%= surveys.answers[3][3] %>" required>
+                            </div>
+                        </div>
+                        <% } %> 
+                    </div>
+                </div>
+
+                <!--Question 05-->
+                <div class="bg-light p-3 mb-3">
+                    <div class="row .justify-content-center">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="question5" name="questions" placeholder="Question 5" value="<%= surveys.questions[4] %>" required>
+                            </div>
+                        </div>
+                        <% if(surveys.questionType == "mcq"){ %>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q5choice1" name="q5" placeholder="Option 1" value="<%= surveys.answers[4][0] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q5choice2" name="q5" placeholder="Option 2" value="<%= surveys.answers[4][1] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q5choice3" name="q5" placeholder="Option 3" value="<%= surveys.answers[4][2] %>" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="q5choice4" name="q5" placeholder="Option 4" value="<%= surveys.answers[4][3] %>" required>
+                            </div>
+                        </div>
+                        <% } %> 
+                    </div>
+                </div>
+                
+
+                <button type="submit" class="btn btn-outline-success"><%= buttonName %></button>
+                <a href="/surveys" class="btn btn-outline-danger"> Cancel </a>
+            </form>
+        </div>
+    </div>
+
+    <div class="buffer"></div>
+    
+</main>
+
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

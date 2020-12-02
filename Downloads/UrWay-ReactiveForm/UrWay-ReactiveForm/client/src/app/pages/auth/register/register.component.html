@@ -1,0 +1,37 @@
+<div class="container">
+
+  <mat-card>
+    <form [formGroup]="registerForm" (submit)="onRegister()" >
+      <div class="row justify-content-center">
+        <div class="col-7">
+          <mat-form-field class="w-100">
+            <input type="text" matInput placeholder="Username" formControlName="username" required>
+            <mat-error>Please Enter Username</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-7">
+          <mat-form-field class="w-100">
+            <input type="password" matInput placeholder="Password" formControlName="password" required>
+            <mat-error>Please Enter Password</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-7">
+          <mat-form-field class="w-100">
+            <input type="text" matInput placeholder="Email" formControlName="email" required>
+            <mat-error>Please Enter a Valid Email Address</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-7">
+          <mat-form-field class="w-100">
+            <input type="number" matInput placeholder="Contact Number" formControlName="contact" required>
+            <mat-error>Please Enter Contact Number</mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <button mat-raised-button color="primary" type="submit">Register</button>
+      </div>
+    </form>
+  </mat-card>
+</div>
+

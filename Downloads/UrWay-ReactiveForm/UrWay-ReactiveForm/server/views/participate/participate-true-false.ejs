@@ -1,0 +1,141 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+        <main class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">
+                    <%= title %>
+                </h1>
+            </div>
+
+            <div class="row justify-content-md-center">
+                <div class="col-8">
+
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <% if(title == 'Surveys') {%>
+
+                                    <div class="row justify-content-md-center">
+                                        
+                                        <div class="col">
+                                            <hr>
+                                            <table class="table table-hover table-striped table-bordered">
+                                                
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col"> Survey Title</th>
+                                                    </tr>
+                                                </thead>
+                                                
+                                                <tbody>
+                                                    <% for(let count=0; count < surveylist.length; count++){%>
+                                                        <tr>
+                                                            <td>
+                                                                <%= surveylist[count].surveyname %>
+                                                            </td>
+                                                        </tr>
+                                                        <% } %>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <% } %>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <form method="POST">
+                        <div class="surveyname">
+                            <label for="surveyname"></label>
+                            <input type="text" class="form-control" id="surveyname" name="surveyname" placeholder="Untitled Survey">
+                        </div>
+
+                        <!--Question 1-->
+                        <div class="form-group">
+                            <label for="q1"></label>
+                            <input type="text" class="form-control" id="q1" name="q1" placeholder="Question 1">
+                        </div>
+                        <select class="custom-select">
+                            <option selected>Your answer</option>
+                            <option value="1">True</option>
+                            <option value="2">False</option>
+                            <option value="3">Prefer not to answer</option>
+                          </select><br><br>
+
+                        <!--Question 2-->
+                        <div class="form-group">
+                            <label for="q2"></label>
+                            <input type="text" class="form-control" id="q2" name="q2" placeholder="Question 2">
+                        </div>
+                        <select class="custom-select">
+                            <option selected>Your answer</option>
+                            <option value="1">True</option>
+                            <option value="2">False</option>
+                            <option value="3">Prefer not to answer</option>
+                          </select><br><br>
+
+                        <!--Question 3-->
+                        <div class="form-group">
+                            <label for="q3"></label>
+                            <input type="text" class="form-control" id="q3" name="q3" placeholder="Question 3">
+                        </div>
+                        <select class="custom-select">
+                            <option selected>Your answer</option>
+                            <option value="1">True</option>
+                            <option value="2">False</option>
+                            <option value="3">Prefer not to answer</option>
+                          </select><br><br>
+                        <!--Question 4 -->
+                        <div class="form-group">
+                            <label for="q4"></label>
+                            <input type="text" class="form-control" id="q4" name="q4" placeholder="Question 4">
+                        </div>
+                        <select class="custom-select">
+                            <option selected>Your answer</option>
+                            <option value="1">True</option>
+                            <option value="2">False</option>
+                            <option value="3">Prefer not to answer</option>
+                          </select><br><br>
+                        <!--Question 5-->
+                        <div class="form-group">
+                            <label for="q5"></label>
+                            <input type="text" class="form-control" id="q5" name="q5" placeholder="Question 5">
+                        </div>
+                        <select class="custom-select">
+                            <option selected>Your answer</option>
+                            <option value="1">True</option>
+                            <option value="2">False</option>
+                            <option value="3">Prefer not to answer</option>
+                          </select><br><br>
+                        <!--Question 6-->
+                        <div class="form-group">
+                            <label for="q6"></label>
+                            <input type="text" class="form-control" id="q6" name="q6" placeholder="Question 6">
+                        </div>
+                        <select class="custom-select">
+                            <option selected>Your answer</option>
+                            <option value="1">True</option>
+                            <option value="2">False</option>
+                            <option value="3">Prefer not to answer</option>
+                          </select><br><br>
+
+
+
+                        <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-plus-circle"></i> Create Survey</button>
+                        <a href="/home" class="btn btn-warning btn-lg"><i class="fas fs undo"> Cancel</i></a>
+
+                    </form>
+                    <hr>
+                    <hr>
+                    <hr>
+
+
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>

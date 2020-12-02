@@ -1,0 +1,27 @@
+<div class="container">
+  <a class="btn btn-primary" routerLink="/surveys/create"> Create </a>
+  <div form *ngFor="let survey of surveyCollection; let i= index">
+    <div class="form-group">
+      <mat-accordion>
+        <mat-expansion-panel expandedHeight>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h1>{{survey.surveyTitle}}</h1>
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>{{survey.surveyDescription}}</p>
+          <mat-action-row>
+            <input type="date" [disabled]="isActivated[i]" [value]="toInputDate(survey.dateActiveStart)" #dateStart>
+            <input type="date" [disabled]="isActivated[i]" [value]="toInputDate(survey.dateActiveEnd)" #dateEnd>
+            <button mat-raised-button color="Primary" (click)="onActivate(survey, i, dateStart.value, dateEnd.value)">{{buttonName[i]}}</button>
+            <button mat-button color="Primary" [disabled]="isActivated[i]" (click)="onEdit(survey._id)">Edit</button>
+            <button mat-button color="warn" [disabled]="isActivated[i]" (click)="onDeleteSurvey(survey._id)">Delete</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+  </div>
+  </div>
+</div>

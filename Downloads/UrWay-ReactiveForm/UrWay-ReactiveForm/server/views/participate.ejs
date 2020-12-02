@@ -1,0 +1,55 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+<main class="container">
+    <div class="jumbotron">
+        <h1 class="display-4"><%= surveys.surveyTitle %></h1>     
+        
+    </div>
+      
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+        
+            <form method="POST">
+
+                <% if(surveys.questionType == "mcq") { %> 
+                    <%for(let index = 0; index < surveys.questions.length; index++){ %> 
+                        <h3><%= surveys.questions[index] %></h3>   
+                        <input type="text" id="question1" name="answers" value="<%= surveys.questions[index] %>" hidden>
+                        <input type="radio" id="q1o1" name="answers" value="<%= surveys.answers[index][0] %>">
+                        <label for="q1o1"><%= surveys.answers[index][0] %></label><br>
+                        <input type="radio" id="q1o2" name="answers" value="<%= surveys.answers[index][1] %>">
+                        <label for="q1o2"><%= surveys.answers[index][1] %></label><br>
+                        <input type="radio" id="q1o3" name="answers" value="<%= surveys.answers[index][2] %>">
+                        <label for="q1o3"><%= surveys.answers[index][2] %></label><br>
+                        <input type="radio" id="q1o4" name="answers" value="<%= surveys.answers[index][3] %>">
+                        <label for="q1o4"><%= surveys.answers[index][3] %></label><br>
+                    <% } %>
+                <% } if(surveys.questionType == "sa") { %>
+                    <%for(let index = 0; index < surveys.questions.length; index++){ %> 
+                        <h3><%= surveys.questions[index] %></h3>   
+                        <input type="text" name="answers" value="<%= surveys.questions[index] %>" hidden>
+                        <textarea name="answers" cols="30" rows="5" required placeholder="<%= surveys.answers[0][index] %>"></textarea>
+                    <% } %>
+                <% } else { %>    
+                    <%for(let index = 0; index < surveys.questions.length; index++){ %> 
+                        <h3><%= surveys.questions[index] %></h3>   
+                        <input type="radio" id="q1o1" name="answers" value="<%= surveys.answers[index][0] %>">
+                        <label for="q1o1"><%= surveys.answers[index][0] %></label><br>
+                        <input type="radio" id="q1o2" name="answers" value="<%= surveys.answers[index][1] %>">
+                        <label for="q1o2"><%= surveys.answers[index][1] %></label><br>
+                    <% } %>
+                <% } %>
+                <div class="row">
+                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                    <a href="/home" class="btn btn-outline-danger">Cancel</a>
+                </div>  
+            </form>
+        </div>
+    </div>
+    <div class="buffer"></div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

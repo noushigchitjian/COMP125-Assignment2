@@ -1,0 +1,36 @@
+<!-- Content of Home -->
+<main class="containerHome">
+    <div class="Middle">
+        <h1 class="cover-heading">UrWay Surveys</h1>
+        <p class="lead">Let us help you create one simple but pratical survey for your friends</p>
+        <p class="lead">
+        <a routerLink="/surveys" class="btn btn-lg btn-outline-dark">Create Survey</a>
+        </p>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-8">
+
+            <table class="table">
+
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody *ngFor="let activeSurvey of activeSurveys">
+                    <tr>
+                        <td>{{activeSurvey.surveyTitle}}</td>
+                        <td>
+                            <button type="button" (click)="onParticipate(activeSurvey._id)">Participate</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+      </div>
+    </div>
+</main>

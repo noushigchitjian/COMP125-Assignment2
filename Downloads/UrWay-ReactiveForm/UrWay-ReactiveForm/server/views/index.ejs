@@ -1,0 +1,52 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>  
+
+  <!-- Main Content -->
+  <main class="containerHome">
+
+    <div class="Middle">
+      <h1 class="cover-heading">UrWay Surveys</h1>
+      <p class="lead">Let us help you create one simple but pratical survey for your friends</p>
+      <p class="lead">
+        <a href="/surveys/create" class="btn btn-lg btn-outline-dark">Create Survey</a>
+      </p>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-8">
+
+          <table class="table">
+
+              <thead class="thead-dark">
+                  <tr>
+                      <th scope="col">Title</th>
+                      <th></th>
+                  </tr>
+              </thead>
+
+              <tbody>
+                  <% for(let i=0; i < surveys.length; i++) { %>
+                  <tr>
+                      <td><%= surveys[i].surveyTitle %></td>
+                      <td>
+                          <a href="surveys/participate/<%= surveys[i]._id %>" class="btn btn-outline-dark btn-sm">Participate</a>
+                      </td>
+                  </tr>
+                  <% } %>
+              </tbody>
+              
+          </table>
+      </div>
+  </div>
+
+  </main>  
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+

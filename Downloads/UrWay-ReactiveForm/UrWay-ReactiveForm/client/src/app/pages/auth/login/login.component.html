@@ -1,0 +1,24 @@
+<div class="container">
+
+    <mat-card>
+      <form [formGroup]="loginForm" (submit)="onLogin()" >
+        <div class="row justify-content-center">
+          <div class="col-7">
+            <mat-form-field class="w-100">
+              <input type="text" matInput placeholder="Username" formControlName="username" required>
+              <mat-error>Please Enter Username</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-7">
+            <mat-form-field class="w-100">
+              <input type="password" matInput placeholder="Password" formControlName="password" required>
+              <mat-error>Please Enter Password</mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <button mat-raised-button color="primary" type="submit">Log In</button>
+        </div>
+      </form>
+    </mat-card>
+</div>

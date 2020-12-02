@@ -1,0 +1,97 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <form [formGroup]="surveyForm" (ngSubmit)="onSubmit()">
+        <div class="row justify-content-end form-group">
+          <button type="submit" mat-raised-button color="primary">{{buttonName}}</button>
+          <button type="button" mat-button color="primary" (click)="onReset()">Reset</button>
+          <button type="button" mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+        </div>
+        <mat-form-field class="w-100" appearance="fill">  <!--surveyTitle-->
+          <mat-label>Title</mat-label>
+          <input matInput
+          placeholder="Survey Title"
+          id="surveyTitle"
+          formControlName = "surveyTitle"
+          required>
+          <mat-error>Please Enter Title</mat-error>
+        </mat-form-field>
+        <mat-form-field class="w-100" appearance="fill">  <!--surveyDescription-->
+          <mat-label>Description</mat-label>
+          <textarea matInput
+          placeholder="Survey Description"
+          rows="5"
+          id="surveyDescription"
+          formControlName = "surveyDescription"></textarea>
+          <mat-error>Please Enter Description</mat-error>
+        </mat-form-field>
+
+        <div class="row justify-content-start form-group ">
+          <button type="button" mat-raised-button color="primary" (click)="onAddQuestion()">Add Question</button>
+        </div>
+          <div formArrayName="questionsDetail">   <!--FormArray QuestionsDetail-->
+            <div *ngFor="let questionDetail of questionsDetailcontrols.controls; let i=index">
+              <div class="w-80">
+              <div [formGroupName]="i">
+                <div class="w-90">
+                  <div class="row justify-content-between">
+                    <div class="col-4">
+                      <mat-form-field appearance="fill">
+                        <mat-label>Question Type</mat-label>    <!-- Question Type -->
+                        <select matNativeControl required
+                        formControlName="questionType"
+                        (change)="removeElements(i)">
+                          <option value="mcq">Multiple Choice</option>
+                          <option value="tof">True or False</option>
+                          <option value="saq">Short Answer</option>
+                        </select>
+                        <mat-error>Please Select Question Type</mat-error>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-2">
+                      <button type="button" mat-raised-button color="primary" [disabled]="i==0" (click)="onRemoveQuestion(i)">
+                        <span class="material-icons">clear</span>
+                      </button>
+                    </div>
+                  </div>
+                  <mat-form-field class="w-100" appearance="fill">  <!-- Question -->
+                    <mat-label>Question {{i+1}}</mat-label>
+                  <input matInput
+                  placeholder="Enter Question {{i+1}}"
+                  id="question"
+                  formControlName="question">
+                  <mat-error>Please Enter Question</mat-error>
+                  </mat-form-field>
+                  <div class="row justify-content-center form-group">
+                    <button type="button" mat-raised-button color="primary" [disabled]="hideChoices(i)" (click)="onAddChoices(i)">Add Choices</button>
+                  </div>
+                  <div formArrayName="choices">
+                    <div *ngFor="let choice of getChoicesControl(i); let in=index">
+                      <div class="row justify-content-center">
+                        <div class="col-9">
+                          <mat-form-field class="w-100" appearance="fill">  <!-- Choices -->
+                            <mat-label>Option {{in+1}}</mat-label>
+                          <input matInput
+                          placeholder="Option {{in+1}}"
+                          id="choice"
+                          [formControlName]="in">
+                          <mat-error>Please Enter an Option</mat-error>
+                          </mat-form-field>
+                        </div>
+                        <div class="col-2 align-self-center">
+                          <button type="button" mat-raised-button color="warn"  [disabled]="in < 2" (click)="onRemoveChoice(i, in)">
+                            <span class="material-icons">clear</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

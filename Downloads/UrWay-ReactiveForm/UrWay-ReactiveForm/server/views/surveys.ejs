@@ -1,0 +1,47 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+     
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="/surveys/create-mcq" class="btn btn-outline-dark btn-lg">Add New Multiple Choices Questions Survey</a>
+            <a href="/surveys/create-tof" class="btn btn-outline-dark btn-lg">Add New True or False Survey</a>
+            <a href="/surveys/create-sa" class="btn btn-outline-dark btn-lg">Add New Short Answers Survey</a>
+            </div>
+            <br>
+            <br>
+            
+            <table class="table">
+
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Surveys already created</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% for(let i=0; i < surveys.length; i++) { %>
+                    <tr>
+                        <td><%= surveys[i].surveyTitle %></td>
+                        <td>
+                            <a href="surveys/edit/<%= surveys[i]._id %>" class="btn btn-outline-success btn-sm">Edit</a>
+                        </td>
+                        <td>
+                            <a href="surveys/delete/<%= surveys[i]._id %>" class="btn btn-outline-danger btn-sm" name="deleteBtn">Delete</a>
+                        </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+
+            </table>
+            
+        </div>
+    </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

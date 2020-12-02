@@ -1,0 +1,62 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+<main class="container">
+    <div class="jumbotron">
+        <h1 class="display-4"><%= title %></h1>      
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+
+            <form method="POST" class="was-validated">
+                <div class="form-group">
+                <label for="surveyTitle" id="surveyTitle">Please enter the Survey Title</label>
+                <input type="text" class="form-control is-valid" id="surveyTitle" name="surveyTitle" value="<%= surveysS.title %>" required>
+                </div>
+
+                <!--Question 01-->
+                <div class="form-group">
+                    <label for="question1" id="questions">Question 1: </label>
+                    <input type="text" class="form-control" id="question1" name="question1" value="<%= surveysS.q1 %>" required>
+                </div>
+
+                <!--Question 02-->
+                <div class="form-group">
+                    <label for="question2" id="questions">Question 2: </label>
+                    <input type="text" class="form-control" id="question2" name="question2" value="<%= surveysS.q2 %>" required>
+                </div>
+
+                <!--Question 03-->
+                <div class="form-group">
+                    <label for="question3" id="questions">Question 3: </label>
+                    <input type="text" class="form-control" id="question3" name="question3" value="<%= surveysS.q3 %>" required>
+                </div>
+
+                <!--Question 04-->
+                <div class="form-group">
+                    <label for="question4" id="questions">Question 4: </label>
+                    <input type="text" class="form-control" id="question4" name="question4" value="<%= surveysS.q4 %>" required>
+                </div>
+
+                <!--Question 05-->
+                <div class="form-group">
+                    <label for="question5" id="questions">Question 5: </label>
+                    <input type="text" class="form-control" id="question5" name="question5" value="<%= surveysS.q5 %>" required>
+                </div>
+                                
+                <button type="submit" class="btn btn-outline-success"><%= buttonName %></button>
+                <a href="/surveys" class="btn btn-outline-danger"> Cancel </a>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="buffer"></div>
+    
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

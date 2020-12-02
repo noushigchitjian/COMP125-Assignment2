@@ -1,0 +1,12 @@
+.w-80
+{
+  overflow: scroll;
+  margin: auto;
+  width: 100%;
+  height: 200px;
+  background-color: gainsboro;
+}
+.mar-auto
+{
+  margin: auto;
+}

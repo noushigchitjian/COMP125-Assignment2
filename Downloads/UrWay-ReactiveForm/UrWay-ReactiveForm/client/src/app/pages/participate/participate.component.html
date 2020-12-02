@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-5">
+      <div class="row justify-content-center">
+        <h1>{{ participateSurvey.surveyTitle }}</h1>
+      </div>
+      <div class="row justify-content-center">
+        <h2>{{ participateSurvey.surveyDescription }}</h2>
+      </div>
+        <div *ngFor="let questionDetails of participateSurvey.questionsDetail; let i=index">
+          <div *ngIf="questionDetails.questionType === 'mcq'">
+            <label id="example-radio-group-label"><b>Q{{i+1}}:</b> {{ questionDetails.question }}</label>
+            <mat-radio-group
+              aria-labelledby="example-radio-group-label"
+              class="example-radio-group"
+              [(ngModel)]="answer[i]" required>
+              <mat-radio-button class="example-radio-button" *ngFor="let choice of questionDetails.choices" [value]="choice">
+                {{choice}}
+              </mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <div *ngIf="questionDetails.questionType === 'tof'">
+            <label id="example-radio-group-label"> <b>Q{{i+1}}:</b> {{ questionDetails.question }}</label>
+            <mat-radio-group
+              aria-labelledby="example-radio-group-label"
+              class="example-radio-group"
+              [(ngModel)]="answer[i]" required>
+              <mat-radio-button class="example-radio-button" *ngFor="let choice of questionDetails.choices" [value]="choice">
+                {{choice}}
+              </mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <div *ngIf="questionDetails.questionType === 'saq'">
+            <label id="example-radio-group-label"><b>Q{{i+1}}:</b> {{ questionDetails.question }}</label>
+            <mat-form-field class="w-100" appearance="fill">  <!--surveyDescription-->
+              <textarea matInput
+              [placeholder]="questionDetails.choices[0]"
+              rows="5"
+              id="answer" [(ngModel)]="answer[i]"></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <button type="button" mat-raised-button color="primary" (click)="onSubmit()"> Submit</button>
+  </div>
+  <div class="row justify-content-center">
+    <mat-hint class="error" *ngIf="showHint">Please Answer All Questions</mat-hint>
+  </div>
+</div>
